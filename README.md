@@ -23,9 +23,37 @@ This is an e-commerce mobile application with functionalities similar to Amazon 
 - **src/navigation**: Handles navigation using React Navigation
 - **src/screens**: Contains screen components, categorized by type
 - **src/utils**: Utility functions and constants
-  
+
 ## Installation
 
 1. Clone the repository:
    ```bash
    git clone <repo-url>
+   ```
+
+```base
+                                   ┌───────────────┐
+                                   │  Start Screen │
+                                   └──────┬────────┘
+                                          │
+                                ┌─────────▼──────────┐
+                                │ Authentication Flow│
+                                └───────┬────────────┘
+                                        │
+                      ┌─────────────────▼────────────────┐
+                      │              Home                │
+                      └───────────────┬──────────────────┘
+                                      │
+          ┌───────────────────────────▼──────────────────────────┐
+          │                        Product List                  │
+          └───────────────┬─────────────┬─────────────┬──────────┘
+                          │             │             │
+                     ┌────▼────┐   ┌────▼────┐   ┌────▼─────┐
+                     │ Product │   │  Cart   │   │ Profile  │
+                     │ Details │   │         │   │          │
+                     └────┬────┘   └────┬────┘   └────┬─────┘
+                          │             │             │
+              ┌───────────▼───────────┐ │ ┌──────────▼─────────┐
+              │ Admin Panel (Roles)   │ │ │ Barcode/QR Scanner │
+              └───────────────────────┘ └─┴────────────────────┘
+```
