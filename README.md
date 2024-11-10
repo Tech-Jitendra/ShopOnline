@@ -252,4 +252,4 @@ yarn start --prod
 
 ## Support
 
-For support, please contact [your-email@domain.com]
+For support, please contact [jitenmaurya0@gmail.com]
