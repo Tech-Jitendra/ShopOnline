@@ -17,7 +17,8 @@ const MainScreen = () => {
       />
       <Button
         mode="contained"
-        onPress={() => setUser(user ? null : "John Doe")}
+        onPress={() => {
+          setUser(user ? null : "John Doe")}}
         style={{ marginTop: 20 }}
       >
         {user ? "Logout" : "Login"}
